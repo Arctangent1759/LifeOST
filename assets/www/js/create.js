@@ -1,10 +1,19 @@
 //Globals
 var GLOBALS=true;
+var SONG_DIV_TEMPLATE='\
+<div class="music-select-entry" style="border:1px solid gray; border-radius:15px; width:98%;">\
+	<table style="width:100%"><tr>\
+		<td width="20%"><span style="padding-left:10px ; color:white;">{0}</span></td>\
+		<td width="40%"><span style="padding-left:10px ; color:white;">{1}</span></td>\
+		<td width="10%" align="center"><span style="padding-right:10px ; color:white;"><input class="music-checkbox" type="CHECKBOX"/></span></td>\
+	</tr></table>\
+</div>'
 
 var mode="addpolygon";
 var regions=[]
 var currpoly=[]
 var poly_vis=false
+
 
 //Application Logic
 $(function(){
@@ -16,7 +25,7 @@ $(function(){
 	}).addTo(map);
 
 	document.addEventListener("deviceready",function(){
-		map.locate({setView: true, maxZoom: 16});
+		navigator.geolocation.getCurrentPosition(function(){map.locate({setView: true, maxZoom: 16});},function(){alert("GPS Communication Failure.");})
 		$("#tool-addpolygon").click(function(e){
 			mode="addpolygon";
 			$(".btn-inverse").removeClass("active")
@@ -119,11 +128,37 @@ Object.prototype.clone = function() {
     } return newObj;
 };
 
+String.prototype.format=function(){
+    var args=arguments;
+    var out=this;
+    for (var i = 0; i<args.length; i++){
+	        out=out.replace("{"+i+"}",args[i])
+	    }
+    return out
+}
+
 //Helper functions
 function latlngs_to_list(l){
 	out=[]
 	for (var i = 0; i<l.length; i++){
 		out.push([l[i].lat,l[i].lng])
 	}
+	return out
+}
+function addSong(path){
+	var name=path.split(".").slice(0,-1).join().split("/").slice(-1)[0]
+	$("#music-container").append(SONG_DIV_TEMPLATE.format(name,path))
+}
+function scanSongs(){
+	var out=[]
+	var currname
+	var currpath
+	$(".music-checkbox").each(function(){
+		if(this.checked){
+			currname=$($(this).parent().parent().siblings()[0]).children().html();
+			currpath=$($(this).parent().parent().siblings()[1]).children().html();
+			out.push({name:currname,path:currpath})
+		}
+	})
 	return out
 }
