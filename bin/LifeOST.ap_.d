@@ -31,6 +31,7 @@
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/spec.html \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/help.html \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/res \
+/home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/pw \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/img \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/spec \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/leaflet.js \
@@ -38,10 +39,12 @@
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/jquery-1.8.3.js \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/create.js \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/cordova-2.2.0.js \
+/home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/bootstrap-timepicker.js \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/js/bootstrap.js \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/css/bootstrap.css \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/css/leaflet.css \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/css/master.css \
+/home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/css/timepicker.css \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/res/screen \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/res/icon \
 /home/arctangent1759/Documents/Projects/Ongoing/LifeOST/assets/www/res/screen/android \

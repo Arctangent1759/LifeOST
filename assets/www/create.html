@@ -24,6 +24,7 @@
 				</div>
 				<div class="span2">
 					<div id="map" class="btn-group btn-group-vertical">
+						<a href="#" id="tool-pointer" class="btn btn-inverse"><i class="icon-file icon-eye-open icon-white"></i><br/><small>Inspect</small></a>
 						<a href="#" id="tool-addpolygon" class="btn btn-inverse active"><i class="icon-file icon-white"></i><br/><small>New Region</small></a>
 						<a href="#" id="tool-finishpolygon" class="btn btn-inverse"><i class="icon-pencil icon-white"></i><br/><small>Finish Polygon</small></a>
 						<a href="#" id="tool-deletepolygon" class="btn btn-inverse"><i class="icon-ban-circle icon-white"></i><br/><small>Delete Region</small></a>
@@ -39,15 +40,11 @@
 						<h3 style="color:white; text-align:center">Select Music</h3>
 						<table style="width:100%"><tr>
 							<td width="20%" align="center"><span style="padding-left:10px ; color:white;"><strong>Song Title</strong></span></td>
-							<td width="40%" align="center"><span style="padding-left:10px ; color:white;"><strong>Song Path</strong></span></td>
+							<td width="40%" align="center"><span style="padding-left:10px ; color:white;"><strong>Path</strong></span></td>
 							<td width="10%" align="center"><span style="padding-right:10px ; color:white;"><strong>Selected</strong></span></td>
 						</tr></table>
 						<div id="music-container" style="overflow-y:scroll;height:90px;padding:10px;">
 						</div>
-						<!--
-						$(".music-checkbox").each(function(){if(this.checked){console.log($($(this).parent().parent().siblings()[1]).children().html());}})
-						$("#music-container").append(SONG_DIV_TEMPLATE.format("SONG NAME","/etc/pw"))
-						-->
 					</div>
 				</div>
 			</div>
