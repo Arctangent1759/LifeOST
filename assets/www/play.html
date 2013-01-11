@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>LifeOST</title>
+        <script type="text/javascript" src="js/cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/load_options.js"></script>
+        <script type="text/javascript" src="js/play.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/leaflet.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+		<link rel="stylesheet" href="css/leaflet.css" />
+    </head>
+    <body>
+		<div id="map" style="width:100%;height:75%;position:absolute;border-style:solid;border-width:1px;">
+		</div>
+		<div style="width:100%;height:15%;top:75%;position:absolute;">
+			<div class="row-fluid">
+				<div class="span12">
+					<div id="music-select" style="overflow:hidden;border-radius:25px;height:200px;background-image: linear-gradient(bottom, rgb(77,76,77) 0%, rgb(0,0,0) 59%);background-image: -o-linear-gradient(bottom, rgb(77,76,77) 0%, rgb(0,0,0) 59%);background-image: -moz-linear-gradient(bottom, rgb(77,76,77) 0%, rgb(0,0,0) 59%);background-image: -webkit-linear-gradient(bottom, rgb(77,76,77) 0%, rgb(0,0,0) 59%);background-image: -ms-linear-gradient(bottom, rgb(77,76,77) 0%, rgb(0,0,0) 59%);background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(77,76,77)),color-stop(0.59, rgb(0,0,0)));">
+						<h3 style="color:white; text-align:center">Now Playing</h3>
+						<table style="width:100%"><tr>
+							<td width="40%" align="center"><span style="padding-left:10px; color:white;"><strong>Song Title</strong></span></td>
+							<td width="60%" align="center"><span style="padding-left:10px; color:white;"><strong>Path</strong></span></td>
+						</tr></table>
+						<div id="music-container" style="overflow-y:scroll;height:90px;padding:10px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id = "debug"></div>
+
+    </body>
+</html>

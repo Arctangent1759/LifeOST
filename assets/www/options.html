@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>LifeOST</title>
+        <script type="text/javascript" src="js/cordova-2.2.0.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/leaflet.js"></script>
+		<script type="text/javascript" src="js/load_options.js"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+		<link rel="stylesheet" href="css/leaflet.css" />
+    </head>
+	<body>
+		<img src="img/png/LifeOST_white.png" style="width:100%"/>
+		<hr />
+		<form class="form-horizontal" onsubmit="">
+			<fieldset>
+				<div>
+					<legend>Geolocation</legend>
+					<div class="control-group">
+						<label class="control-label">GPS Refresh Rate</label>
+						<div class="controls">
+							<div class="input-append">
+								<input type="number" id="geo_period"></input>
+								<span class="add-on">Milliseconds</span>
+							</div>
+							<a class="btn btn-small" href="#" onclick='$(this.parentNode.parentNode.parentNode).find(".help-block").toggle("fast")'>?</a>
+						</div>
+					</div>
+					<span class='help-block' style="display:none;">The GPS Refresh Rate may affect battery life. For longer battery life, increase the time between refreshes.</span>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<legend>Playback</legend>
+					<div class="control-group">
+						<label class="control-label">Truncate Song</label>
+						<div class="controls">
+							<input type="checkbox" id="truncate"></input>
+							<a class="btn btn-small" href="#" onclick='$(this.parentNode.parentNode.parentNode).find(".help-block").toggle("fast")'>?</a>
+						</div>
+					</div>
+					<span class='help-block' style="display:none;">Determines if the player will stop the current song when you move out of its region.</span>
+				</div>
+			</fieldset>
+			<br/>
+			<br/>
+			<center>
+				<div class="row-fluid">
+					<a class="btn btn-success span4" id="savebtn" href="index.html">Save</a>
+					<a class="btn btn-warning span4" id="applybtn" href="#">Apply</a>
+					<a class="btn btn-danger span4" id="cancelbtn" href="index.html">Cancel</a>
+				</div>
+			</center>
+		</form>
+	</body>
+</html>
+

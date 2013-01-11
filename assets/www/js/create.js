@@ -193,7 +193,7 @@ $(function(){
 					dir.getDirectory("profile",{create:true,exclusive:false},function(dir){
 						dir.getFile("profile.json", {create: true, exclusive: false}, function(file){
 							file.createWriter(function(writer){
-								writer.onwritend=function(){alert("Data saved!")}
+								//writer.onwritend=function(){alert("Data saved!")}
 								writer.write(save_data)
 							},function(){
 								alert("Failed to create save file writer. Please try again.")
